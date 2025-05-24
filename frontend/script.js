@@ -6,7 +6,7 @@ document.getElementById("biodataForm").addEventListener("submit", async function
   formData.forEach((value, key) => (data[key] = value));
 
   try {
-    const response = await fetch("http://localhost:5000/submit", {
+    const response = await fetch("https://atlas-biodata-form.onrender.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
